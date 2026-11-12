@@ -4,6 +4,11 @@
    ========================================================== */
 
 /* ---------- Provided styles: do not change these ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: Calibri, Arial, sans-serif;
@@ -46,6 +51,7 @@ h2 {
    but readers still need to reach every announcement. */
 .announcements {
   height: 160px;
+  overflow: auto;
 }
 
 
@@ -55,6 +61,9 @@ h2 {
   background-color: #1E2761;
   color: #CADCFC;
   padding: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -100,6 +109,9 @@ h2 {
   border: 2px dashed #1F3864;
   padding: 6px 10px;
   margin: 0 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
